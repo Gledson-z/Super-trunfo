@@ -9,7 +9,6 @@ int main() {
     int pontosTuristicos01, populacao01;
     float areaEmKm2_01, pib01, densidadepopulacional01, pibpercapita01;
 
-
     // Declaração das variaveis - CARTA 02
     char estado02;
     char codigoDaCarta02[20];
