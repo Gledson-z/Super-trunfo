@@ -1,84 +1,72 @@
 #include <stdio.h>
 
 int main() {
-   
-    // Declaração das variaveis carta 01
-    char Estado01;
-    char CodigoDaCarta01[20];
-    char NomeDaCidade01[40];
-    int  PontosTuristicos01, Populacao01;
-    float AreaEmKm01, PIB01;
 
-    // Declaração das variaveis carta 02
-    char Estado02;
-    char CodigoDaCarta02[20];
-    char NomeDaCidade02[40];
-    int PontosTuristicos02, Populacao02;
-    float AreaEmKm02, PIB02;
+    // Declaração das variaveis - CARTA 01
+    char estado01;
+    char codigoDaCarta01[20];
+    char nomeDaCidade01[40];
+    int pontosTuristicos01, populacao01;
+    float areaEmKm2_01, pib01;
 
-    //Entrada das informações da primeira carta forneciada pelo usuario
+    // Declaração das variaveis - CARTA 02
+    char estado02;
+    char codigoDaCarta02[20];
+    char nomeDaCidade02[40];
+    int pontosTuristicos02, populacao02;
+    float areaEmKm2_02, pib02;
+
+    //Entrada das informações forneciada pelo usuário - CARTA 01
     printf("Digite uma letra de 'A' a 'H' para representar um estado: ");
-    scanf("%c", &Estado01);
-
+    scanf(" %c", &estado01);
     printf("Digite a letra que representa o estado seguida de um número de 01 a 04: ");
-    scanf("%s", CodigoDaCarta01);
-
+    scanf("%s", codigoDaCarta01);
     printf("Forneça um nome de uma cidade de um estado: ");
-    scanf("%s", NomeDaCidade01);
-
+    scanf("%s", nomeDaCidade01);
     printf("Forneça o número de habitantes da cidade em questão: ");
-    scanf("%d", &Populacao01);
-
+    scanf("%d", &populacao01);
     printf("Forneça a área da cidade em Km²: ");
-    scanf("%f", &AreaEmKm01);
-
+    scanf("%f", &areaEmKm2_01);
     printf("Digite o PIB (Produto Interno Bruto) da cidade: ");
-    scanf("%f", &PIB01);
-
+    scanf("%f", &pib01);
     printf("Digite a quantidade de pontos turísticos na cidade: ");
-    scanf("%d", &PontosTuristicos01);
+    scanf("%d", &pontosTuristicos01);
 
-    //Saida das informações da primeira carta fornecidas pelo usuario
-    printf("Carta 01\n");
-    printf("Estado: %c\n", Estado01);
-    printf("Código: %s\n", CodigoDaCarta01);
-    printf("Nome da Cidade: %s\n", NomeDaCidade01);
-    printf("População: %d\n", Populacao01);
-    printf("Área Total: %.2f Km²\n", AreaEmKm01);
-    printf("PIB: %.2f Bilhões de reais\n", PIB01);
-    printf("Número de Pontos Turísticos: %d\n", PontosTuristicos01);
+    //Saida das informações fornecidas pelo usuário - CARTA 01
+    printf("\nCarta 01\n");
+    printf("Estado: %c\n", estado01);
+    printf("Código: %s\n", codigoDaCarta01);
+    printf("Nome da Cidade: %s\n", nomeDaCidade01);
+    printf("População: %d\n", populacao01);
+    printf("Área Total: %.2f Km²\n", areaEmKm2_01);
+    printf("PIB: %.2f Bilhões de reais\n", pib01);
+    printf("Número de Pontos Turísticos: %d\n", pontosTuristicos01);
 
-    //Entrada das informações da segunda carta forneciada pelo usuario
-    printf("Digite uma letra de 'A' a 'H' para representar um estado: ");
-    scanf("%c", &Estado02);
-
+    //Entrada das informações forneciada pelo usuário - CARTA 02
+    printf("\nDigite uma letra de 'A' a 'H' para representar um estado: ");
+    scanf(" %c", &estado02);
     printf("Digite a letra que representa o estado seguida de um número de 01 a 04: ");
-    scanf("%s", CodigoDaCarta02);
-
+    scanf("%s", codigoDaCarta02);
     printf("Forneça um nome de uma cidade de um estado: ");
-    scanf("%s", NomeDaCidade02);
-
+    scanf("%s", nomeDaCidade02);
     printf("Forneça o número de habitantes da cidade em questão: ");
-    scanf("%d", &Populacao02);
-
+    scanf("%d", &populacao02);
     printf("Forneça a área da cidade em Km²: ");
-    scanf("%f", &AreaEmKm02);
-
+    scanf("%f", &areaEmKm2_02);
     printf("Digite o PIB (Produto Interno Bruto) da cidade: ");
-    scanf("%f", &PIB02);
-
+    scanf("%f", &pib02);
     printf("Digite a quantidade de pontos turísticos na cidade: ");
-    scanf("%d", &PontosTuristicos02);
+    scanf("%d", &pontosTuristicos02);
 
-    //Saida das informações da segunda carta fornecidas pelo usuario
-    printf("Carta 02\n");
-    printf("Estado: %c\n", Estado02);
-    printf("Código: %s\n", CodigoDaCarta02);
-    printf("Nome da Cidade: %s\n", NomeDaCidade02);
-    printf("População: %d\n", Populacao02);
-    printf("Área Total: %.2f Km²\n", AreaEmKm02);
-    printf("PIB: %.2f Bilhões de reais\n", PIB02);
-    printf("Número de Pontos Turísticos: %d\n", PontosTuristicos02);
+    //Saida das informações fornecidas pelo usuário - CARTA 02
+    printf("\nCarta 02\n");
+    printf("Estado: %c\n", estado02);
+    printf("Código: %s\n", codigoDaCarta02);
+    printf("Nome da Cidade: %s\n", nomeDaCidade02);
+    printf("População: %d\n", populacao02);
+    printf("Área Total: %.2f Km²\n", areaEmKm2_02);
+    printf("PIB: %.2f Bilhões de reais\n", pib02);
+    printf("Número de Pontos Turísticos: %d\n", pontosTuristicos02);
 
     return 0;
 }
